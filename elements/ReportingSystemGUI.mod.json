@@ -1,0 +1,64 @@
+{
+  "_fv": 69,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 159,
+    "height": 80,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_server_settings_hla_reportin",
+          "text": {
+            "fixedValue": "Reporting System"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 171,
+          "y": 87
+        }
+      },
+      {
+        "type": "checkbox",
+        "data": {
+          "name": "ReportingSystemCheckbox",
+          "text": "Reporting System Used?",
+          "isCheckedProcedure": {
+            "name": "ReportingSystemGUIChecked"
+          },
+          "x": 141,
+          "y": 101
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_apply_changes",
+          "text": "Apply Changes",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "ReportingSystemToggler"
+          },
+          "width": 93,
+          "height": 20,
+          "x": 167,
+          "y": 128
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}
